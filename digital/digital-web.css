@@ -60,6 +60,7 @@ display: flex;
 .timeline {
   padding-bottom: 14px;
   margin: 30px 20px 0 0;
+  /* width: 33.33333333%; */
 }
 
 .grid-content {
