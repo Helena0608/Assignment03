@@ -46,8 +46,8 @@ section > .container {
 
 .banner-intro {
   position: absolute;
-  top: 30%;
-  left: 40%;
+  top: 40%;
+  left: 35%;
   font-size: 35px;
   color: #fff;
   text-align: center;
@@ -78,12 +78,13 @@ section > .container {
 }
 
 #avatar img {
-  width: 250px;
+  width: 200px;
+  height: 220px;
   border: 10px solid #fff;
   border-radius: 50%;
   position: absolute;
   left: 420px;
-  top: -90px;
+  top: -70px;
 }
 
 /* ABOUT */
@@ -116,7 +117,7 @@ display: none;
 
 /* JOB INFO */
 #job-info {
-  margin: 24px;
+  margin: 10px;
 }
 
 #container-info {
@@ -125,6 +126,7 @@ display: none;
   grid-template-rows: 1fr 0.5fr;
   gap: 40px;
   padding: 16px;
+  margin: 0;
 }
 
 #container-info h1 {
@@ -231,30 +233,31 @@ h4 {
 /* CHỨNG CHỈ - GIẢI THƯỞNG */
 #container-certificate {
   display: grid;
-  grid-template-columns: 500px 500px 20px 500px 400px;
+  grid-template-columns: 270px 330px 20px 270px 330px;
   grid-template-rows: 0.5fr 20px 1fr;
 }
   /* IMAGE */
 #container-certificate img {
-  width: 400px;
+  width: 250px;
 }
-
+/* 
 #cer_img2 {
   margin-left: 10px;
-}
+} */
 
 #cer_img1,
 #cer_img3 {
-  margin: 0 40px 30px 200px;
+  margin-left: 20px;
 }
 
   /*margin_certificate */
-#cer_1 {
-  margin-left: 120px;
+#container-certificate  h5 {
+font-size: 18px;
 }
 
-#cer_3 {
-  margin-left: 120px;
+
+#cer_1, #cer_3 {
+  margin-left: 10px;
 }
 
 .certificate p {
@@ -264,7 +267,7 @@ h4 {
 
   /* border_certificate */
 #border-1 {
-  height: 200px;
+  height: 150px;
   width: 1px;
   background-color: #d6c08d;
 }
@@ -273,12 +276,12 @@ h4 {
   height: 1px;
   background-color: #d6c08d;
   grid-column: 1/-1;
-  margin-left: 200px;
+  margin-left: 20px;
 }
 
 /* DỰ ÁN */
 .project {
-  margin: 0 200px 0 400px;
+  margin: 0 0 0 90px;
   width: 330px;
   gap: 50px;
 }
@@ -389,6 +392,7 @@ td:nth-child(odd) {
 
 .view {
   transition: transform 0.5s ease-in;
+  width: 350px;
 }
 
 .view:hover {

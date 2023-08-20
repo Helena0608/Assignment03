@@ -72,6 +72,11 @@
     grid-template-rows: 1fr;
     gap: 40px;
     padding: 0;
+    margin: 50px ;
+  }
+
+  .view {
+    max-width: 350px;
   }
 
   /* SỞ THÍCH */

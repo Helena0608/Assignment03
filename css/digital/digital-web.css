@@ -1,9 +1,13 @@
-.container {
+section {
   max-width: 1900px;
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 50px;
-  margin-left: 100px;
+  grid-template-columns: 2fr 1fr;
+  /* gap: 50px; */
+  /* margin-left: 100px; */
+}
+
+.container {
+  margin: 0;
 }
 
 .content {
@@ -27,7 +31,7 @@
 
 /* Scopes */
 .scopes-content {
-  display: flex;
+display: flex;
 }
 
 
@@ -35,19 +39,27 @@
 /* Goals, team */
 .goals,
 .team {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 /*Goals, Scopes*/
 .goals,
 .scopes {
   max-width: 800px;
-  margin-right: 60px;
+  max-height: 400px;
+  margin-right: 35px;
+  margin-left: 20px;
+}
+
+.scopes, .primary{
+  margin-bottom: 30px;
 }
 
 /* Timeline */
 .timeline {
   padding-bottom: 14px;
+  margin: 30px 20px 0 0;
 }
 
 .grid-content {
@@ -71,12 +83,16 @@
 
 /* Tablet */
 @media screen and (max-width: 767.98px) {
-  .container {
+  section {
     max-width: 767px;
     display: inline-block;
     margin-left: 0;
   }
 
+  .container {
+    max-width: 767px;
+  }
+
   .content {
     display: block;
   }
@@ -85,28 +101,38 @@
     text-align: center;
   }
 
+  .goals {
+max-height: 600px;
+  }
+
   .goals,
   .team,
   .scopes,
   .primary,
   .timeline {
-    display: block;
-    margin-bottom: 30px;
+    display: inline-block;
+    margin: 30px 60px;
+    width: 80%;
   }
 
-  .col-4,
-  .col-8 {
-    width: 100%;
-  }
+.scopes-content {
+  display: block;
+}
+
 }
 
 /* Mobile */
 @media screen and (max-width: 575.98px) {
-  .container {
+  section {
     max-width: 575px;
     display: inline-block;
     margin-left: 0;
   }
+
+  .container {
+    max-width: 575px;
+  }
+
   .content {
     display: block;
   }
@@ -114,17 +140,22 @@
   .ic {
     text-align: center;
   }
+
+  .goals {
+max-height: 600px;
+  }
+
   .goals,
   .team,
   .scopes,
   .primary,
   .timeline {
-    display: block;
-    margin-bottom: 30px;
+    display: inline-block;
+    margin: 30px 60px;
+    width: 80%;
   }
 
-  .col-4,
-  .col-8 {
-    width: 100%;
-  }
+.scopes-content {
+  display: block;
+}
 }

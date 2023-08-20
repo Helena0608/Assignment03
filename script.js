@@ -3,7 +3,8 @@
 // Thông tin cá nhân
 const submitControl = document.querySelector(".submit-email");
 
-function handleSubmit() {
+function handleSubmit(event) {
+  event.preventDefault()
   // giá trị input in thường
   const emailValue = document
     .getElementById("inputEmail")
